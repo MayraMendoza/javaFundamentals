@@ -1,0 +1,28 @@
+Define the terms: method, class, function, field, variable
+Define the terms in relation to each other. ie a method is a function, defined within an object…a function is…
+Commit changes to this file as you add more definitions and explanations
+
+Function - a function is a block of code that performs a task.
+when using a function you have to specify the return type some functions do not return anything which will
+be declared by using the reserved keyword void followed by the name of the function.
+example
+void send email () {
+
+
+}
+in java functions are referred to as methods. a method is a function that is
+part of a class.
+
+class - a class is a container for one or more related functions. classes are used
+to organize code. Every java program should have at lest one class that contains the main
+function.
+
+classes are defined by a class modifier (private/ public)
+the class keyword followed by a proper descriptive name.
+
+public class Main {     <---- when naming classes we use PascalNamingConvention
+    public static void main(){ <----- when naming methods we use camelNamingConvention
+
+    }
+}
+ main method should always be static

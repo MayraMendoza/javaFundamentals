@@ -1,0 +1,16 @@
+string is a sequence of characters.
+to run program (^R)
+
+How java code gets executed.
+compilation
+source code (.java) runs into the java compiler that compiles our code
+into BYTE CODE. (java compiler comes with the java developer kit)
+
+java runtime environment (JRE) this has a java virtual machine (JVM)
+This JVM translates the BYTE code into native code for the under length
+operating system. ( code that mac, windows ect.. can understand as log as it has a JVM installed). allowing
+java to be executed because its platform independent.
+steps taken when a program is being run and executed.
+scr --> java --> com.--> careerdevs. --> Main
+
+

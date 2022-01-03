@@ -1,0 +1,33 @@
+introduction to data types
+variables and constants
+primitive and reference types
+casting
+numbers, Strings and Arrays
+Read input
+
+Variables - we use variables to temporarily store data in computers memory.
+you can't use reserved keywords to name variables, classes or methods.
+first to declare type of variable --> name(identifier) --> = assignment operator  --> value being assigned
+
+primitive types - for storing simple values
+Type --- Bytes --- Range
+// whole numbers
+byte ---   1   ---  [-128,127]
+short --   2   ---  [-32k, 32k]
+int  ---   4   ---  [-2b, 2billion]
+long ---   8   ---  [large numbers]
+//decimals
+float --   4   ---
+double--   8   ---
+char ---   2   ---  [A,B,C,..]
+boolean--  1   ---   [ TRUE/FALSE]
+
+non-primitive types (reference) - for storing complex objects
+ ---- strings , arrays, user defined classes, objects.
+ not defined by the programming language but created by the programmer.
+ they are called reference variables or object references since they reference a memory
+ location which stores the data
+
+
+
+in order to use a class from a different packege we need to import it
