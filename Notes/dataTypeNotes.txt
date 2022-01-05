@@ -27,7 +27,84 @@ non-primitive types (reference) - for storing complex objects
  not defined by the programming language but created by the programmer.
  they are called reference variables or object references since they reference a memory
  location which stores the data
+primitive is used for storing simple values and non-primitive to store complex objects
+primitive
+ y and x are in two different memory locations/ independent of each other if value of x changes y will not be affected
+they are copied by their value which are independent of each other.
+
+reference
+will be stored in an address of memory location
+they store a reference to an object (point one and point 2 are referencing)
+ the same point object in memory if you update one of these variables the change will be visible to the other variable
+reference are copied by their references.
 
 
 
 in order to use a class from a different packege we need to import it
+
+---------Strings -------
+parameters- are the holds that we define a method
+arguments- are the actual values we pass in the method,
+
+in java strings are immutable. we cannot mutate them or change them.
+
+ADD NEW LINE = \n
+ADD tab = \n
+String message1 = "Hello \"Mosh\""; // if you want to add double quotes to a string add \".
+// c:\Windows\..
+String message2 = " c:\\Windows\\.."; // to add backslashes you need to add \\ so it won't confuse it with you trying to add quotes.
+
+-------------------------------arrays--------------------------------
+are of reference type
+java arrays have a fixed size. once we create them we cannot add or remove items to them
+use Arrays.toString(NAME) to print out a one dimensional array
+
+------------------------- Multi- dimensional arrays-----------------------
+use Arrays.deepToString(NAME) to print out multi-dimensional array.
+
+------------------------- constants------------------------------
+when you don't want the value of a variable to change it to a constant by adding final
+ EXAMPLE ---> final float PI = 3.14F;
+name the variable with capital letters.
+
+---------------------------Arithmetic Expressions --------------------------
+--(+ addition)
+--(- subtraction)
+--(* multiplication)
+--(/ division)
+    will give you a whole number. in java the division of a whole number is another whole number.
+    if you declare it as an int it will  be int result = 10 / 3;
+    if you declare it as a double -- double result = 10.0 / 3.0; ---> your result will be 3.3333333333333335
+--(% modulus) - returns the remainder.
+
+augmented/ compound assignment operator -
+x = x +2  -----(same)--->  x+=2
+
+------------------------------ order of operations -----------------------------------------
+in math multiplication and division have a higher oder priority. so they get applied first.
+to change the order you wrap it in parentheses 10 +3 *2 = 16 ---(10 +3) *2 = 32.
+   ()     parentheses
+   * /    multiplication and subtraction
+   +-     addition and subtraction
+
+
+--------------------------------------casting ----------------------------------------
+implicit casting- automatic casting/ automatic conversion.
+when a value can be converted into a data type that is bigger casting/ conversion happens automatically
+byte can be automatically converted into int, int can be converted into long
+implicit casting happens when there is no chance of data being lost.
+byte > short > int> long > float > double
+explicit and implicit casting can only happen when types are compatible. (previous line).
+we cannot cast a string to a number. we would have to use a wraper class
+integer.parseIt() -- short -- float --- double etc.
+
+converting a string to a number (usually user input are received as strings)
+we cannot cast a string to a number. we would have to use  wrapper classes
+integer.parseIt() -- wrapper class for the integer type
+Double.parseDouble()
+short -- float --- double etc.
+
+
+-------------------------------The Math Class-------------------------
+
+
