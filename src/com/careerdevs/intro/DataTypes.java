@@ -1,9 +1,11 @@
 package com.careerdevs.intro;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class DataTypes {
     public static void main(String[] args) {
@@ -169,12 +171,72 @@ public class DataTypes {
         // it is overloaded (which means you can enter different types )
         // the round method has one that accepts a float and returns an int
         // it also accepts a double type which returns a long.
-        int results = Math.round(1.1F);
+        int results = Math.round(1.1F);  // will return 1.
         System.out.println(results);
 
         // another useful method in the math class is ceil which returns
         // Math.ceil(1.1F) will returns the smallest interger that is greater than
         // or equal to the number passed (1.1). ceiling of 1.1 is 2 .
+        int result1 = (int) Math.ceil(1.1F);  // we need to explicitly cast this to an integer (int)
+        // because you are trying to put a float which is bigger into an int--- will return 2
+        System.out.println(result1);
+
+        // we use floor when we want to find the largest number that is smaller or equal to the number that is passed.
+        // this will return 1
+        int result2 = (int)Math.floor(1.1F);
+        System.out.println(result2);
+
+        double result3 = Math.max(3.5, 2);
+        System.out.println(result3);
+        // this method is overloaded so you can mix doubles, ints, floats in the parameter
+        // but make sure that the variable type is able to hold the type that is returned.
+
+        int result4 = (int) Math.round(Math.random() * 100) ;  // will return a random number between 0-1 - multiply it
+        // by 100 to return a number between 0-100.
+        // to get an int without any decimal you will have to round and declare it an int
+        // you will have to use explicit casting (add int before Math.round) because the number will be between 0 and 100.
+        // can also be written like this
+        int result5 = (int) (Math.random() * 100);
+        System.out.println(result4);
+
+        // ------------------------Formatting Numbers ---------------------------
+        // how to format numbers in java.
+        //
+        //NumberFormat currency = new NumberFormat();
+        // we cannot create an instance of the numberformat class because its abstract
+        // the
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result6 = currency.format(1234567.891);
+        System.out.println(result6);
+
+        // formatting a number as a percent
+        NumberFormat percent = NumberFormat.getPercentInstance(); // you can have this if
+        // you are referencing to this multiple times.
+        String result7 = percent.format(0.1);
+        System.out.println(result7);
+
+        // you can do a method chain if you are only calling it once
+        String result8 = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(result8);
+
+        // ---------------------------Reading input ---------------------
+        // how to read input from the user.
+        Scanner scanner = new Scanner(System.in);
+        // to work with the terminal window, we will use System.in this is one of the fields in the system class
+        //this object has a bunch of methods to read data --- they all start with next
+        // example nextByte().. nextLine() etc...
+        byte age = Scanner.nextByte();// returns a byte value
+
+
+
+
+
+
+
+
+
+
+
 
 
 
