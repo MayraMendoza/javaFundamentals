@@ -1,0 +1,3 @@
+How to rename all the variables of the same names at the same time. (referenced the same)
+right click on the word - then click refactor --> rename (shift f6)
+

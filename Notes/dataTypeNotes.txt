@@ -9,6 +9,8 @@ Variables - we use variables to temporarily store data in computers memory.
 you can't use reserved keywords to name variables, classes or methods.
 first to declare type of variable --> name(identifier) --> = assignment operator  --> value being assigned
 
+Field is a variable that is defined in a class
+
 primitive types - for storing simple values
 Type --- Bytes --- Range
 // whole numbers
@@ -106,5 +108,22 @@ short -- float --- double etc.
 
 
 -------------------------------The Math Class-------------------------
+-----MATH.ROUND - will round number into the nearest whole number
+-----Math.Ceil
+Math.ceil(1.1F) will return the smallest interger that is greater than or equal to
+ the number passed (1.1). ceiling of 1.1 is 2 .
+
+-----Math.floor is the largest interger that is smaller  or equal to the number passed.
+
+----Math.max  will return the greater of two values
+double result3 = Math.max(3.5, 2);
+        System.out.println(result3);
+        // this method is overloaded so you can mix doubles, ints, floats in the parameter
+        // but make sure that the variable type is able to hold the type that is returned
+----math.min--- will return the smallest of two values
+
+
+
+
 
 
