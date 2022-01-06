@@ -225,7 +225,9 @@ public class DataTypes {
         // to work with the terminal window, we will use System.in this is one of the fields in the system class
         //this object has a bunch of methods to read data --- they all start with next
         // example nextByte().. nextLine() etc...
-        byte age = Scanner.nextByte();// returns a byte value
+
+
+
 
 
 
