@@ -222,10 +222,24 @@ public class DataTypes {
         // ---------------------------Reading input ---------------------
         // how to read input from the user.
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: "); // will print out first (line 230 will follow)
+        //(println) removing ln from println will let user respond on the same line in terminal.
         // to work with the terminal window, we will use System.in this is one of the fields in the system class
         //this object has a bunch of methods to read data --- they all start with next
         // example nextByte().. nextLine() etc...
-        byte age = Scanner.nextByte();// returns a byte value
+        byte age2 = scanner.nextByte();// returns a byte value
+        // having a user input anything other than byte (like float it will crash your program)
+        // so you will have to change
+        System.out.println("You are " + age2);
+        // here you are adding a sting to a byte so implicit type casting will happen
+        // you are truning the BYTE age into a string.
+
+        //--------- example using strings -------
+        Scanner scanner1 = new Scanner (System.in);
+        /// 3:01
+
+
+
 
 
 

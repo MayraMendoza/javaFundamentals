@@ -1,3 +1,107 @@
 How to rename all the variables of the same names at the same time. (referenced the same)
 right click on the word - then click refactor --> rename (shift f6)
 
+Mayras-MBP:careerdevs mayra601m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   ../../../Notes/dataTypeNotes.txt
+        modified:   ../../../out/production/javaFundamentals/com/careerdevs/intro/DataTypes.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../../Notes/shortCuts.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Mayras-MBP:careerdevs mayra601m$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+Mayras-MBP:careerdevs mayra601m$ git add -A
+Mayras-MBP:careerdevs mayra601m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   ../../../Notes/dataTypeNotes.txt
+        new file:   ../../../Notes/shortCuts.txt
+        modified:   ../../../out/production/javaFundamentals/com/careerdevs/intro/DataTypes.class
+
+Mayras-MBP:careerdevs mayra601m$ git commit -m "Test"
+[master 73f495a] Test
+ 3 files changed, 22 insertions(+)
+ create mode 100644 Notes/shortCuts.txt
+Mayras-MBP:careerdevs mayra601m$ git push
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 2.46 KiB | 1.23 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/MayraMendoza/javaFundamentals.git
+   e051240..73f495a  master -> master
+Mayras-MBP:careerdevs mayra601m$ git checkout -b brach
+Switched to a new branch 'brach'
+Mayras-MBP:careerdevs mayra601m$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git.
+Mayras-MBP:careerdevs mayra601m$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git.
+Mayras-MBP:careerdevs mayra601m$ git status
+On branch brach
+nothing to commit, working tree clean
+Mayras-MBP:careerdevs mayra601m$ git chechout master
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+Mayras-MBP:careerdevs mayra601m$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Mayras-MBP:careerdevs mayra601m$ git checkout brach
+Switched to branch 'brach'
+Mayras-MBP:careerdevs mayra601m$ git add -A
+Mayras-MBP:careerdevs mayra601m$ git status
+On branch brach
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   intro/DataTypes.java
+
+Mayras-MBP:careerdevs mayra601m$ git commit -m "deleted line 228"
+[brach 6c8c415] deleted line 228
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Mayras-MBP:careerdevs mayra601m$ git push origin brach
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 503 bytes | 503.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: Create a pull request for 'brach' on GitHub by visiting:
+remote:      https://github.com/MayraMendoza/javaFundamentals/pull/new/brach
+remote:
+To https://github.com/MayraMendoza/javaFundamentals.git
+ * [new branch]      brach -> brach
+Mayras-MBP:careerdevs mayra601m$ git branch -d brach
+error: Cannot delete branch 'brach' checked out at '/Users/mayra601m/Documents/careerdevs/intermediatecurriculum/javaFundamentals'
+Mayras-MBP:careerdevs mayra601m$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Mayras-MBP:careerdevs mayra601m$ git branch -d brach
+error: The branch 'brach' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D brach'.
+Mayras-MBP:careerdevs mayra601m$ git branch -D brach
+Deleted branch brach (was 6c8c415).
+Mayras-MBP:careerdevs mayra601m$
+
+
+---- look into enhanced forloops and for each loop (will touch on every item on that list)
