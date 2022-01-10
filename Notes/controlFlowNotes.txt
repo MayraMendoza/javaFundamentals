@@ -1,0 +1,19 @@
+*****
+In this section we will talk about control flow (Controlling the flow of our programs)
+* Comparison Operators - Comparing Values
+* Logical Operators - logical && (and),  logical || (or), logical != (Not) we use these operators
+  for implementing real world rules.
+* Conditional statements - Making decision in our programs
+* loops- for executing code repeatedly
+* revisit error handling in mortgage calculator.
+
+------------------------------------Comparison Operators --------------------------------------
+we use these comparison operators to compare primitive values (int, long, byte, boolean, char etc)
+* (==) EQUALS
+* (!=) NOT EQUAL
+* (>)  GREATER THAN // CROCODILE EATS THE BIGGER ONE
+* (<)  LESS THAN
+* (>=) GREATER THAN OR EQUAL TO
+* (<=) LESS THAT OR EQUAL TO
+
+-------------------------------------Logical operators ---------------------------------------------
