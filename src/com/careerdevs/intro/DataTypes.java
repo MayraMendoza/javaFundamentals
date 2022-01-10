@@ -221,7 +221,10 @@ public class DataTypes {
 
         // ---------------------------Reading input ---------------------
         // how to read input from the user.
-        Scanner scanner = new Scanner(System.in);
+        // im java you have a scanner class that is defined in (java.util) package
+        // you will need to import and create a new scanner object.
+        // in the parenthesis you need to specify where you will read data - from terminal window, from a file etc.
+        Scanner scanner = new Scanner(System.in); //work with terminal window -- system in
         System.out.print("Age: "); // will print out first (line 230 will follow)
         //(println) removing ln from println will let user respond on the same line in terminal.
         // to work with the terminal window, we will use System.in this is one of the fields in the system class
@@ -232,11 +235,28 @@ public class DataTypes {
         // so you will have to change
         System.out.println("You are " + age2);
         // here you are adding a sting to a byte so implicit type casting will happen
-        // you are truning the BYTE age into a string.
+        // you are turning the BYTE age into a string.
 
         //--------- example using strings -------
         Scanner scanner1 = new Scanner (System.in);
-        /// 3:01
+        System.out.print("Name: ");
+        String name = scanner1.nextLine().trim();
+        System.out.println("you are " + name);
+
+        // the words we input are called tokens
+        // when using .next only one token will be read.
+        // changing String name = scanner1.next(); to String name = scanner1.nextLine();
+        // will make sure that both tokens Mayra Mendoza would be read.
+        // when asking user input the trim method is useful because it deletes all the unnecessary white space (     mayra m    )
+        // String name = scanner1.nextLine().trim(); <-- chaining multiple method here
+
+
+
+
+
+
+
+
 
 
 
