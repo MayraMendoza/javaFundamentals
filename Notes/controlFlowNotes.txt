@@ -17,3 +17,78 @@ we use these comparison operators to compare primitive values (int, long, byte, 
 * (<=) LESS THAT OR EQUAL TO
 
 -------------------------------------Logical operators ---------------------------------------------
+* (&&) AND - the and operator will if at least one of these statements is false then the entire result is false
+              java will evaluate the expression from left to right - if the first expression is
+              false java will ignore the second one (because && means they both have to be true).
+
+* (||) OR  -  with the or operator if at least one condition is true the result will be true.
+              if the first condition is false java will continue to the second one to see if it's true
+
+* (!)  NOT -  we want to make sure they don't have a criminal record so we use the not operator
+              !true = false. -- it will reverse the value of the boolean value or expression.
+
+----------------------------------if statements --------------------------------------
+if statements allow us to build programs based on certain conditions.
+
+--------------------------------Simplifying if statements------------------------------
+We can only declare new variables in code blocks
+nut if we declare hasHighIncome inside the code block then it will be out of scope
+       int income = 120_000;
+              boolean hasHighIncome;
+              if (income > 100_000)
+                   hasHighIncome = true;
+
+              System.out.println(hasHighIncome);
+
+// instead of writing all this we can simply write
+ int income = 120_000
+ boolean hasHighIncome = (income > 100_000);
+ if its true it will set boolean to true if not it will set it to false.
+
+//------------------------------------ The Ternary Operator -----------------------------------
+        THIS IS HOW YOU WOULD WANT TO WRITE A NORMAL IF/ELSE STATMENT.
+        TO DETERMINE WHAT CLASS A PERSON WOULD BE PLACE BASED ON INCOME.
+
+        int income2 = 120_000;
+        String className;
+        if (income2 > 100_000)
+            className="First";
+        else
+            className ="Economy";
+
+        // The statement above can be simplified to this.
+        int income3 = 120_000;
+        String className2="Economy";
+        if (income2 > 100_000)
+            className2="First";
+
+        // Even further simplify you can use the ternary statement
+
+
+        int income4 = 120_000;
+        String className = income > 100_000 ?  "First" : "Economy"
+
+       WE WANT TO SET THIS STRING TO AN EXPRESSION DEPENDING ON THE RESULT OF THE EXPRESSION
+       you start with a condition then a ? if the condition is true "this gets added" : "otherwise this gets added"
+       ternary operation uses both a ? & a :
+
+//--------------------------------------Switch Statements -------------------------------------
+we use to execute different parts of code depending on the (value on?) expression similar to if statements.
+// you can use this for a  byte, short or int.
+String role = "admin";
+
+        switch (role){
+            case "admin":
+                System.out.println("you're an admin");
+                break; // you need the break so it will not continue to execute following lines.
+
+            case "moderator":
+                System.out.println("you are a moderator");
+                break;
+            default:
+                System.out.println("you are a guest");
+                break;
+        }
+
+//----------------------------------Exercise: FizzBuzz ----------------------------------
+
